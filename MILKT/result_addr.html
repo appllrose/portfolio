@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>주소 검색 결과</title>
+  <script type="text/javascript">
+    function return_addr(pCode, addr) {
+      opener.document.getElementById("postalCode").value = pCode;
+      opener.document.getElementById("addr1").value = addr;
+      window.close();
+    };
+  </script>
+</head>
+<body>
+  <p>"서울특별시 강서구 등촌동" 주소를 입력하시겠습니까?<br>
+    <a href="#" onclick="return_addr()">[확인]</a>
+    <a href="#" onclick="history.back()">[다시 검색]</a>
+  </p>
+
+</body>
+</html>

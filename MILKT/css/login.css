@@ -1,0 +1,602 @@
+/* CSS 초기화 */
+body,
+h1,
+h2,
+h3,
+div,
+ul,
+li,
+nav,
+main,
+section,
+footer,
+header,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "noto sans CJK", "맑은 고딕", "돋움";
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+ul li {
+  list-style: none;
+}
+
+address {
+  font-style: normal;
+}
+
+/* font 지정 */
+@font-face {
+  font-family: "TmoneyRoundWindExtraBold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/TmoneyRoundWindExtraBold.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Katuri";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_13@1.0/Katuri.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GmarketSansBold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GmarketSansMedium";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 공통 클래스 */
+.blind {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+}
+
+.main_back {
+  background: #ffe744;
+  /* background: linear-gradient(to top, #fff244, #ffe744); */
+  width: 100%;
+  height: 800px;
+}
+
+/* header */
+#header {
+  width: 100%;
+  height: 160px;
+  /* border:1px solid black; */
+  /* position: absolute; */
+  /* margin: 0 auto; */
+  margin: 0auto;
+  overflow: hidden;
+  /* left: 306px; */
+}
+
+.logo img {
+  width: 171px;
+  /* height: 140px; */
+  /* background: url(images/MTI_logo.png) no-repeat; */
+  text-indent: -9999px;
+  position: relative;
+  top: 30px;
+  left: 70px;
+}
+
+.main_menu {
+  list-style: none;
+  font-size: 23px;
+  line-height: 30px;
+  font-weight: bold;
+  margin: 0 auto;
+  position: absolute;
+  /* width: 640px;
+      height: 100px; */
+  top: 60px;
+  left: 370px;
+}
+
+.main_menu a:hover {
+  color: white;
+  font-weight: bold;
+}
+
+.main_menu > li {
+  text-decoration: none;
+  float: left;
+  padding: 30px 30px 0 30px;
+}
+
+.top_menu {
+  font-size: 15px;
+  line-height: 0px;
+  float: right;
+  top: -41px;
+  position: relative;
+  right: 70px;
+}
+
+.top_menu a:hover {
+  font-weight: bold;
+}
+
+.top_menu li {
+  float: left;
+  padding: 10px;
+  /* background: url() */
+}
+
+/* logo */
+h2 {
+  text-align: center;
+  margin-top: 40px;
+}
+h2 img {
+  width: 250px;
+  margin: 0 auto;
+  /* text-align: center; */
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+form {
+  text-align: center;
+}
+
+/* ID, PW 박스 */
+.ID,
+.PW {
+  width: 220px;
+  height: 30px;
+  padding: 5px;
+  margin: 5px auto;
+  text-align: center;
+  border: 1px solid #aaa;
+}
+
+/* 로그인 유지, IP 보안 */
+.keep_login_wrap {
+  text-align: center;
+}
+
+.keep_login_wrap > div {
+  padding: 2px 38px;
+  display: inline-block;
+}
+
+.keep_login_check .keep_login_IP {
+  float: left;
+}
+
+.keep_login_wrap span {
+  font-size: 12px;
+  color: #666;
+}
+/* .keep_login_wrap,
+.keep_login_IP > span {
+  padding-top: -5px;
+} */
+.checkbox {
+  /* display: none; */
+  width: 15px;
+  height: 15px;
+  /* background: url(images/checkbox.png) no-repeat; */
+}
+
+.switch_button {
+  position: relative;
+  display: inline-block;
+  width: 35px;
+  height: 20px;
+  /* right: 6px; */
+}
+
+.switch_button input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.onoff_switch {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 20px;
+  background-color: #ccc;
+  box-shadow: inset 1px solid #999;
+  -webkit-tranition: 0.4s;
+  transition: 0.4s;
+}
+.onoff_switch:before {
+  position: absolute;
+  content: "";
+  height: 13px;
+  width: 13px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #fff;
+  -webkit-transition: 0.5s;
+  transition: 0.4s;
+  border-radius: 20px;
+}
+.switch_button input:checked + .onoff_switch {
+  background-color: #f8ba00;
+  box-shadow: inset 1px solid #f8ba00;
+}
+.switch_button input:checked + .onoff_switch:before {
+  -webkit-transform: translateX(20px);
+  -ms-transform: translateX(20px);
+  transform: translateX(14px);
+}
+/* 구분선 */
+hr {
+  width: 230px;
+  margin: 20px auto 10px auto;
+}
+
+/* 로그인 클릭 박스 */
+.login {
+  width: 230px;
+  height: 40px;
+  padding: 5px;
+  margin: 5px auto 3px;
+  background-color: #f8ba00;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+/* 하단 메뉴 */
+.side_menu {
+  text-align: center;
+}
+
+.side_menu a {
+  font-size: 14px;
+  text-align: center;
+  margin: 0 auto;
+  color: #777;
+  display: inline-block;
+}
+
+.side_menu ul {
+  display: inline-block;
+}
+
+.side_menu li {
+  float: left;
+  padding: 8px;
+}
+
+.li_bar1 {
+  background: url(../images/footer_bar2.jpg) no-repeat right;
+}
+.li_bar2 {
+  background: url(../images/footer_bar2.jpg) no-repeat right;
+}
+
+/* footer */
+#footer {
+  width: 100%;
+  height: 480px;
+  margin: auto;
+  position: relative;
+  background: #eee;
+}
+
+.top {
+  text-align: center;
+  width: 100%;
+  height: 100px;
+  background: #fff;
+}
+.top > img {
+  position: relative;
+  top: -50px;
+  margin: 0 auto;
+  width: 200px;
+  height: 50px;
+  text-align: center;
+}
+
+.top a {
+  font-family: "TmoneyRoundWindExtraBold";
+  color: #aaa;
+  /* background: url(../images/top1.png) no-repeat; */
+}
+
+.top_p {
+  top: -95px;
+  position: relative;
+  width: 40px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.milkT {
+  width: 800px;
+  height: 40px;
+  margin: 0 auto;
+  text-align: center;
+}
+.milkT li {
+  float: left;
+  position: relative;
+  /* padding: 0 30px; */
+  top: -70px;
+}
+.milkT_1 {
+  text-indent: -9999px;
+  width: 180px;
+  height: 40px;
+  padding: 0 40px;
+  background: url(../images/milkT_1.png) no-repeat;
+}
+.milkT_2 {
+  text-indent: -9999px;
+  width: 180px;
+  height: 40px;
+  padding: 0 40px;
+  background: url(../images/milkT_2.png) no-repeat;
+}
+.milkT_3 {
+  text-indent: -9999px;
+  width: 180px;
+  height: 40px;
+  padding: 0 40px;
+  background: url(../images/milkT_3.png) no-repeat;
+}
+
+.site_map {
+  clear: both;
+  background: #c3c3c3;
+  width: 100%;
+  height: 60px;
+  position: relative;
+  top: -40px;
+}
+
+.site_map ul {
+  width: 1050px;
+  left: 300px;
+  margin: 0 auto;
+  /* border: 1px solid red; */
+}
+
+.site_map li {
+  float: left;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 17px 20px 0 20px;
+}
+
+.site_map a {
+  color: #fff;
+}
+
+.site_map a:hover {
+  color: black;
+}
+
+.family_site {
+  border-radius: 10px;
+  width: 170px;
+  height: 35px;
+  position: absolute;
+  top: 112px;
+  right: 140px;
+  background: #f5f5f5;
+}
+
+.family_site h3 {
+  padding-left: 10px;
+  padding-top: 6px;
+  color: #333;
+  background: url(../images/top2.png) no-repeat 140px center;
+}
+
+.family_site ul {
+  width: 100%;
+  position: absolute;
+  background: #f5f5f5;
+  top: -465px;
+  margin-top: 5px;
+  border-radius: 10px;
+  padding: 5px 0 5px 0;
+  /* display: flex;
+  flex-direction: column-reverse; */
+  display: none;
+}
+.family_site li {
+  height: 24px;
+  padding-left: 10px;
+  line-height: 25px;
+  padding: 6px 0 2px 10px;
+  font-weight: bold;
+  font-size: 16px;
+}
+.family_site li a {
+  color: #969494;
+}
+
+.family_site a:hover {
+  color: #333;
+}
+
+.footer_info {
+  width: 1000px;
+  margin: 0 auto;
+  font-size: 16px;
+}
+
+.info {
+  float: left;
+  width: 700px;
+  background: url(../images/footer_bar3.jpg) no-repeat 640px center;
+}
+
+.footer_logo {
+  width: 370px;
+  height: 100px;
+  background: url(../images/footer_logo.png) no-repeat;
+  background-size: 330px auto;
+  text-indent: -9999px;
+}
+
+/* .footer_info p {
+  float: left;
+  padding-right: 10px;
+} */
+
+.bar2 {
+  /* background: url(../images/footer_bar2.jpg) no-repeat; */
+  width: 1px;
+  height: 20px;
+  background: #888;
+}
+.footer_bottom_cont1 > p,
+address {
+  float: left;
+  padding-right: 20px;
+  color: #9a9a9a;
+  margin-top: 15px;
+}
+
+.footer_bottom_cont2,
+.footer_bottom_cont3 {
+  clear: both;
+}
+.footer_bottom_cont2 > p {
+  float: left;
+  padding-right: 20px;
+  color: #9a9a9a;
+  /* margin-top: 10px; */
+}
+.footer_bottom_cont3 > p {
+  float: left;
+  padding-right: 20px;
+  color: #9a9a9a;
+  /* margin-top: 10px; */
+}
+.info > p {
+  color: #9a9a9a;
+  clear: both;
+  margin-top: 40px;
+  font-size: 11px;
+}
+.info > p > a {
+  font-size: 13px;
+}
+.custom_serv {
+  float: left;
+  width: 300px;
+  color: #9a9a9a;
+}
+
+.custom_serv h3 a {
+  text-indent: -9999px;
+  width: 18px;
+  height: 18px;
+  background: url(../images/more.png) no-repeat 10px;
+  padding-right: 50px;
+  background-size: 18px 18px;
+}
+
+.contact_info {
+  color: #0093da;
+  font-size: 45px;
+  padding-top: 5px;
+  font-weight: 900;
+}
+
+.custom_serv_wrap1 p {
+  float: left;
+  margin: 10px 10px 0 0;
+  font-size: 15px;
+}
+.custom_serv_wrap1 p:first-child {
+  padding: 0 10px 0 0;
+  background: url(../images/footer_bar3.jpg) no-repeat right 5px;
+  background-size: 2px 15px;
+}
+.custom_serv_wrap2 {
+  clear: both;
+}
+.custom_serv_wrap2 p {
+  float: left;
+  margin: 3px 10px 0 0;
+  font-size: 15px;
+}
+.custom_serv_wrap2 p:first-child {
+  padding: 0 10px 0 0;
+  background: url(../images/footer_bar3.jpg) no-repeat right 5px;
+  background-size: 2px 15px;
+}
+
+/* .sns_info {
+  clear: both;
+} */
+.sns_info p {
+  float: left;
+  margin: 20px 0 0 0;
+  padding: 5px;
+}
+
+.sns1 {
+  text-indent: -9999px;
+  width: 39px;
+  height: 39px;
+  background: url(../images/sns1.png) no-repeat;
+}
+.sns2 {
+  text-indent: -9999px;
+  width: 39px;
+  height: 39px;
+  background: url(../images/sns2.png) no-repeat;
+}
+.sns3 {
+  text-indent: -9999px;
+  width: 39px;
+  height: 39px;
+  background: url(../images/sns3.png) no-repeat;
+}
+.sns4 {
+  text-indent: -9999px;
+  width: 39px;
+  height: 39px;
+  background: url(../images/sns4.png) no-repeat;
+}
+.sns5 {
+  text-indent: -9999px;
+  width: 39px;
+  height: 39px;
+  background: url(../images/sns5.png) no-repeat;
+}
