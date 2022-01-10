@@ -1,0 +1,297 @@
+/* footer */
+#footer {
+  width: 100%;
+  height: 480px;
+  margin: auto;
+  position: relative;
+  background: #eee;
+}
+
+.top {
+  text-align: center;
+  width: 100%;
+  height: 100px;
+  background: #fff;
+}
+.top > img {
+  position: relative;
+  top: -50px;
+  margin: 0 auto;
+  width: 200px;
+  height: 50px;
+  text-align: center;
+}
+
+.top a {
+  font-family: "TmoneyRoundWindExtraBold";
+  color: #aaa;
+  /* background: url(../images/top1.png) no-repeat; */
+}
+
+.top_p {
+  top: -95px;
+  position: relative;
+  width: 40px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.milkT {
+  width: 800px;
+  height: 40px;
+  margin: 0 auto;
+  text-align: center;
+}
+.milkT li {
+  float: left;
+  position: relative;
+  /* padding: 0 30px; */
+  top: -70px;
+}
+.milkT_1 {
+  text-indent: -9999px;
+  width: 180px;
+  height: 40px;
+  padding: 0 40px;
+  background: url(../images/milkT_1.png) no-repeat;
+}
+.milkT_2 {
+  text-indent: -9999px;
+  width: 180px;
+  height: 40px;
+  padding: 0 40px;
+  background: url(../images/milkT_2.png) no-repeat;
+}
+.milkT_3 {
+  text-indent: -9999px;
+  width: 180px;
+  height: 40px;
+  padding: 0 40px;
+  background: url(../images/milkT_3.png) no-repeat;
+}
+
+.site_map {
+  clear: both;
+  background: #c3c3c3;
+  width: 100%;
+  height: 60px;
+  position: relative;
+  top: -40px;
+}
+
+.site_map ul {
+  width: 1050px;
+  left: 300px;
+  margin: 0 auto;
+  /* border: 1px solid red; */
+}
+
+.site_map li {
+  float: left;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 17px 20px 0 20px;
+}
+
+.site_map a {
+  color: #fff;
+}
+
+.site_map a:hover {
+  color: black;
+}
+
+.family_site {
+  border-radius: 10px;
+  width: 170px;
+  height: 35px;
+  position: absolute;
+  top: 112px;
+  right: 140px;
+  background: #f5f5f5;
+}
+
+.family_site h3 {
+  padding-left: 10px;
+  padding-top: 6px;
+  color: #333;
+  background: url(../images/top2.png) no-repeat 140px center;
+}
+
+.family_site ul {
+  width: 100%;
+  position: absolute;
+  background: #f5f5f5;
+  top: -465px;
+  margin-top: 5px;
+  border-radius: 10px;
+  padding: 5px 0 5px 0;
+  /* display: flex;
+  flex-direction: column-reverse; */
+  display: none;
+}
+.family_site li {
+  height: 24px;
+  padding-left: 10px;
+  line-height: 25px;
+  padding: 6px 0 2px 10px;
+  font-weight: bold;
+  font-size: 16px;
+}
+.family_site li a {
+  color: #969494;
+}
+
+.family_site a:hover {
+  color: #333;
+}
+
+.footer_info {
+  width: 1000px;
+  margin: 0 auto;
+  font-size: 16px;
+}
+
+.info {
+  float: left;
+  width: 700px;
+  background: url(../images/footer_bar3.jpg) no-repeat 640px center;
+}
+
+.footer_logo {
+  width: 370px;
+  height: 100px;
+  background: url(../images/footer_logo.png) no-repeat;
+  background-size: 330px auto;
+  text-indent: -9999px;
+}
+
+/* .footer_info p {
+  float: left;
+  padding-right: 10px;
+} */
+
+.bar2 {
+  /* background: url(../images/footer_bar2.jpg) no-repeat; */
+  width: 1px;
+  height: 20px;
+  background: #888;
+}
+.footer_bottom_cont1 > p,
+address {
+  float: left;
+  padding-right: 20px;
+  color: #9a9a9a;
+  margin-top: 15px;
+}
+
+.footer_bottom_cont2,
+.footer_bottom_cont3 {
+  clear: both;
+}
+.footer_bottom_cont2 > p {
+  float: left;
+  padding-right: 20px;
+  color: #9a9a9a;
+  /* margin-top: 10px; */
+}
+.footer_bottom_cont3 > p {
+  float: left;
+  padding-right: 20px;
+  color: #9a9a9a;
+  /* margin-top: 10px; */
+}
+.info > p {
+  color: #9a9a9a;
+  clear: both;
+  margin-top: 40px;
+  font-size: 11px;
+}
+.info > p > a {
+  font-size: 13px;
+}
+.custom_serv {
+  float: left;
+  width: 300px;
+  color: #9a9a9a;
+}
+
+.custom_serv h3 a {
+  text-indent: -9999px;
+  width: 18px;
+  height: 18px;
+  background: url(../images/more.png) no-repeat 10px;
+  padding-right: 50px;
+  background-size: 18px 18px;
+}
+
+.contact_info {
+  color: #0093da;
+  font-size: 45px;
+  padding-top: 5px;
+  font-weight: 900;
+}
+
+.custom_serv_wrap1 p {
+  float: left;
+  margin: 10px 10px 0 0;
+  font-size: 15px;
+}
+.custom_serv_wrap1 p:first-child {
+  padding: 0 10px 0 0;
+  background: url(../images/footer_bar3.jpg) no-repeat right 5px;
+  background-size: 2px 15px;
+}
+.custom_serv_wrap2 {
+  clear: both;
+}
+.custom_serv_wrap2 p {
+  float: left;
+  margin: 3px 10px 0 0;
+  font-size: 15px;
+}
+.custom_serv_wrap2 p:first-child {
+  padding: 0 10px 0 0;
+  background: url(../images/footer_bar3.jpg) no-repeat right 5px;
+  background-size: 2px 15px;
+}
+
+/* .sns_info {
+  clear: both;
+} */
+.sns_info p {
+  float: left;
+  margin: 20px 0 0 0;
+  padding: 5px;
+}
+
+.sns1 {
+  text-indent: -9999px;
+  width: 39px;
+  height: 39px;
+  background: url(../images/sns1.png) no-repeat;
+}
+.sns2 {
+  text-indent: -9999px;
+  width: 39px;
+  height: 39px;
+  background: url(../images/sns2.png) no-repeat;
+}
+.sns3 {
+  text-indent: -9999px;
+  width: 39px;
+  height: 39px;
+  background: url(../images/sns3.png) no-repeat;
+}
+.sns4 {
+  text-indent: -9999px;
+  width: 39px;
+  height: 39px;
+  background: url(../images/sns4.png) no-repeat;
+}
+.sns5 {
+  text-indent: -9999px;
+  width: 39px;
+  height: 39px;
+  background: url(../images/sns5.png) no-repeat;
+}

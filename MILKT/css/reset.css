@@ -1,0 +1,43 @@
+/* CSS 초기화 */
+body,
+h1,
+h2,
+h3,
+div,
+ul,
+li,
+nav,
+main,
+section,
+footer,
+header,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "noto sans CJK", "맑은 고딕", "돋움";
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+ul li {
+  list-style: none;
+}
+
+address {
+  font-style: normal;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
