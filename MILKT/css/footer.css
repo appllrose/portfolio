@@ -2,52 +2,39 @@
 #footer {
   width: 100%;
   height: 480px;
-  margin: auto;
-  position: relative;
-  background: #eee;
-}
-
-.top {
-  text-align: center;
-  width: 100%;
-  height: 100px;
-  background: #fff;
-}
-.top > img {
-  position: relative;
-  top: -50px;
   margin: 0 auto;
-  width: 200px;
-  height: 50px;
+  background: #fff;
+  position: relative;
+}
+.top_p {
+  width: 300px;
+  height: 100px;
+  background: url(../images/top.png) no-repeat;
+  position: absolute;
+  top: -65px;
+  left: 40%;
+  margin: 0 auto;
+  padding-top: 30px;
   text-align: center;
 }
-
-.top a {
+.top_p a {
+  background: url(../images/top1.png) no-repeat center;
+  padding-top: 43px;
   font-family: "TmoneyRoundWindExtraBold";
   color: #aaa;
-  /* background: url(../images/top1.png) no-repeat; */
-}
-
-.top_p {
-  top: -95px;
-  position: relative;
-  width: 40px;
-  margin: 0 auto;
-  text-align: center;
 }
 
 .milkT {
-  width: 800px;
+  width: 100%;
   height: 40px;
   margin: 0 auto;
+  padding: 30px 0;
   text-align: center;
 }
-.milkT li {
-  float: left;
-  position: relative;
-  /* padding: 0 30px; */
-  top: -70px;
+.milkT div {
+  display: inline-block;
 }
+
 .milkT_1 {
   text-indent: -9999px;
   width: 180px;
@@ -71,19 +58,15 @@
 }
 
 .site_map {
-  clear: both;
   background: #c3c3c3;
   width: 100%;
   height: 60px;
-  position: relative;
-  top: -40px;
 }
 
 .site_map ul {
   width: 1050px;
   left: 300px;
   margin: 0 auto;
-  /* border: 1px solid red; */
 }
 
 .site_map li {
@@ -101,45 +84,47 @@
   color: black;
 }
 
-.family_site {
+/* family site */
+.family_site_wrap {
   border-radius: 10px;
-  width: 170px;
+  width: 200px;
   height: 35px;
   position: absolute;
   top: 112px;
-  right: 140px;
+  right: 230px;
   background: #f5f5f5;
 }
 
-.family_site h3 {
+.family_site_wrap h3 {
+  cursor: pointer;
   padding-left: 10px;
-  padding-top: 6px;
+  padding-top: 5px;
   color: #333;
-  background: url(../images/top2.png) no-repeat 140px center;
+  background: url(../images/top2.png) no-repeat 170px center;
 }
 
-.family_site ul {
-  width: 100%;
-  position: absolute;
+.family_site_wrap > .family_site {
+  width: 200px;
   background: #f5f5f5;
-  top: -465px;
   margin-top: 5px;
   border-radius: 10px;
-  padding: 5px 0 5px 0;
-  /* display: flex;
-  flex-direction: column-reverse; */
-  display: none;
-}
-.family_site li {
-  height: 24px;
-  padding-left: 10px;
-  line-height: 25px;
+  position: absolute;
+  /* left: 0; */
+  /* top: -435px; */
+  /* display: none; */
+  line-height: 30px;
+  top: -2px;
+  height: 0;
+  overflow: hidden;
   padding: 6px 0 2px 10px;
   font-weight: bold;
   font-size: 16px;
+  box-sizing: border-box;
 }
-.family_site li a {
+.family_site div {
   color: #969494;
+  line-height: 30px;
+  padding: 0 10px;
 }
 
 .family_site a:hover {
@@ -148,7 +133,8 @@
 
 .footer_info {
   width: 1000px;
-  margin: 0 auto;
+  margin: 50px auto;
+
   font-size: 16px;
 }
 
@@ -165,12 +151,6 @@
   background-size: 330px auto;
   text-indent: -9999px;
 }
-
-/* .footer_info p {
-  float: left;
-  padding-right: 10px;
-} */
-
 .bar2 {
   /* background: url(../images/footer_bar2.jpg) no-repeat; */
   width: 1px;
@@ -185,8 +165,7 @@ address {
   margin-top: 15px;
 }
 
-.footer_bottom_cont2,
-.footer_bottom_cont3 {
+.footer_bottom_cont2 {
   clear: both;
 }
 .footer_bottom_cont2 > p {
@@ -195,12 +174,7 @@ address {
   color: #9a9a9a;
   /* margin-top: 10px; */
 }
-.footer_bottom_cont3 > p {
-  float: left;
-  padding-right: 20px;
-  color: #9a9a9a;
-  /* margin-top: 10px; */
-}
+
 .info > p {
   color: #9a9a9a;
   clear: both;
@@ -216,11 +190,11 @@ address {
   color: #9a9a9a;
 }
 
-.custom_serv h3 a {
+.custom_serv h3 > a {
   text-indent: -9999px;
-  width: 18px;
-  height: 18px;
-  background: url(../images/more.png) no-repeat 10px;
+  /* width: 18px;
+  height: 18px; */
+  background: url(../images/more.png) no-repeat;
   padding-right: 50px;
   background-size: 18px 18px;
 }
@@ -256,9 +230,6 @@ address {
   background-size: 2px 15px;
 }
 
-/* .sns_info {
-  clear: both;
-} */
 .sns_info p {
   float: left;
   margin: 20px 0 0 0;

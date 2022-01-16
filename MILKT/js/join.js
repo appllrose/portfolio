@@ -18,29 +18,28 @@ function form_check(){
   var agree2 = document.getElementById("agree2");
 
   if(uname.value==""){
-    // alert("이름을 입력하세요.");
     var err_txt = document.querySelector(".err_name");
     err_txt.textContent = "이름을 입력하세요.";
     uname.focus();
     return false;
   };
+  // if(!uname.value==""){    // 이름 입력 시 textContent 없애기  하려는데 안 됨.
+  //   err_txt.textContent = none;
+  // };
   var uname_len = uname.value.length;
   if(2 > uname_len || 5 < uname_len){
-    // alert("이름을 입력하세요.");
     var err_txt = document.querySelector(".err_name");
     err_txt.textContent = "이름은 2자 이상 5자 이하로 입력하세요.";
     uname.focus();
     return false;
   };
   if(uid.value==""){
-    // alert("이름을 입력하세요.");
     var err_txt = document.querySelector(".err_id");
     err_txt.textContent = "아이디를 입력하세요.";
     uid.focus();
     return false;
   };
   if(pwd.value==""){
-    // alert("비밀번호를 입력하세요.");
     var err_txt = document.querySelector(".err_pwd");
     err_txt.textContent = "비밀번호를 입력하세요.";
     pwd.focus();
@@ -54,7 +53,6 @@ function form_check(){
     return false;
   };
   if(repwd.value==""){
-    // alert("비밀번호를 확인하세요.");
     var err_txt = document.querySelector(".err_repwd");
     err_txt.textContent = "비밀번호를 확인하세요.";
     repwd.focus();
@@ -67,7 +65,6 @@ function form_check(){
     return false;
   };
   if(mobile.value==""){
-    // alert("연락처를 입력하세요.");
     var err_txt = document.querySelector(".err_mobile");
     err_txt.textContent = "전화번호를 입력하세요.";
     mobile.focus();
@@ -77,11 +74,9 @@ function form_check(){
   if(!mobile.test(mobile.value)){
     var err_txt = document.querySelector(".err_mobile");
     err_txt.textContent = "전화번호는 숫자만 입력할 수 있습니다.";
-    // mobile.focus();
     return false;
   };
   if(email.value==""){
-    // alert("이메일을 입력하세요.");
     var err_txt = document.querySelector(".err_email");
     err_txt.textContent = "이메일을 입력하세요.";
     email.focus();
@@ -89,14 +84,11 @@ function form_check(){
   };
   var email = /^[a-z0-9._+-]+@[a-z0-9-]+\.[a-z.]+$/g;
   if(!email.test(email.value)){
-    // alert("이메일을 입력하세요.");
-    // var err_txt = document.querySelector(".err_email");
     err_txt.textContent = "이메일을 입력하세요.";
     email.focus();
     return false;
   };
   if(birth.value==""){
-    // alert("생년월일을 입력하세요.");
     var err_txt = document.querySelector(".err_birth");
     err_txt.textContent = "생년월일을 입력하세요.";
     birth.focus();
@@ -121,14 +113,12 @@ function form_check(){
     return false;
   };
   if(postalCode.value==""){
-    // alert("주소를 입력하세요.");
     var err_txt = document.querySelector(".err_postalCode");
     err_txt.textContent = "주소를 검색하세요.";
     postalCode.focus();
     return false;
   };
   if(addr2.value==""){
-    // alert("주소를 입력하세요.");
     var err_txt = document.querySelector(".err_addr2");
     err_txt.textContent = "상세주소를 입력하세요.";
     addr2.focus();

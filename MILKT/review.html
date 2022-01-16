@@ -19,13 +19,13 @@
     <span class="sub_title2">밀크T아이를 직접 체험하신 고객님들의 후기를 만나보세요!</span>
   </div>
   <div class="review_wrap">
-    <ul class="review_photo">
-      <li><img src="images/review_1.png" alt="후기1"></li>
-      <li><img src="images/review_2.png" alt="후기2"></li>
-      <li><img src="images/review_3.png" alt="후기3"></li>
-      <li><img src="images/review_4.png" alt="후기4"></li>
-      <li><img src="images/review_5.png" alt="후기5"></li>
-    </ul>
+    <div class="center">
+      <div><img src="images/review_1.png" alt="후기1"></div>
+      <div><img src="images/review_2.png" alt="후기2"></div>
+      <div><img src="images/review_3.png" alt="후기3"></div>
+      <div><img src="images/review_4.png" alt="후기4"></div>
+      <div><img src="images/review_5.png" alt="후기5"></div>
+    </div>
     <div class="review_cont">
       <div class="rev_cont_c">
         <p>매일 아침 눈 뜨자마자 유치원 가기 전에 스스로 책상 앞에 앉아서 밀크T아이 학습 다 해놓고 갑니다.</p>
@@ -52,6 +52,34 @@
       </div>     -->
     </div>
   </div>
+  <script>
+    $('.center').slick({
+  centerMode: true,
+  centerPadding: '60px',
+  slidesToShow: 3,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 3
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 1
+      }
+    }
+  ]
+});
+  </script>
+  
 
  
   <div data-include-path="inc/foooter.html"></div>

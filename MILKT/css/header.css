@@ -4,43 +4,134 @@
   height: 200px;
   margin: 0 auto;
   background: #ffe744;
-  overflow: hidden;
   /* left: 306px; */
 }
 
+/* 로고 */
 .logo img {
   width: 171px;
-  /* height: 140px; */
-  /* background: url(images/MTI_logo.png) no-repeat; */
   text-indent: -9999px;
   position: relative;
   top: 30px;
   left: 70px;
 }
 
-.main_menu {
-  list-style: none;
+/* 메인 메뉴 hover */
+.main_menu_drop {
+  position: absolute;
+  top: 100px;
+}
+.main_menu_drop .dep1 {
+  font-size: 0;
+  margin-left: 370px;
+  cursor: pointer;
+}
+.main_menu_drop .dep1 > li {
+  display: inline-block;
+  width: 180px;
+  font-size: 23px;
+  margin: 0 20px;
+  vertical-align: top;
+  font-weight: bold;
+  text-align: center;
+  /* padding: 10px 0; */
+}
+
+.main_menu_drop > li > a {
+  display: block;
+}
+.main_menu_drop .dep2 {
+  display: none;
+  background: #fb3;
+}
+.main_menu_drop .dep2 a {
+  display: block;
+  padding: 5px 0;
+}
+.main_menu_drop .dep1 > li:hover > .dep2 {
+  display: block;
+}
+.main_menu_drop .dep2 a:hover {
+  display: block;
+  color: #fff;
+}
+/* .main_menu_drop {
   font-size: 23px;
   line-height: 30px;
   font-weight: bold;
   margin: 0 auto;
-  position: absolute;
-  /* width: 640px;
-      height: 100px; */
-  top: 60px;
-  left: 370px;
-}
+  width: 1000px;
+  /* position: absolute; */
+/* top: 60px; */
+/* left: 370px; 
+}*/
+/* .main_menu_drop ul li {
+  height: 100px;
+} */
 
-.main_menu a:hover {
+/*.main_menu_drop li a {
+  display: block;
+  line-height: 100px;
+  margin: 0;
+  padding: 0 25px;
+  text-align: center;
+  text-decoration: none;
+}
+.main_menu_drop li a:hover,
+.main_menu_drop ul li:hover a {
+  color: #fff;
+  text-decoration: none;
+}
+.main_menu_drop li ul {
+  background: red;
+  display: none;
+  height: auto;
+  border: 0;
+  position: absolute;
+  width: 200px;
+  z-index: 200;
+}
+.main_menu_drop li:hover ul {
+  display: block;
+}
+.main_menu_drop li li {
+  background: red;
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+}
+.main_menu_drop li:hover li a {
+  background: none;
+}
+.main_menu_drop li ul a {
+  display: block;
+  height: 80px;
+  font-size: 16px;
+  margin: 0;
+  padding: 0 10px 0 15px;
+  text-align: center;
+}
+.main_menu_drop li ul a:hover,
+.main_menu_drop li ul li:hover a {
+  background: rgb(171, 171, 171);
+  border: 0;
+  color: #fff;
+  text-decoration: none;
+}
+.main_menu_drop p
+/* .main_menu li:hover {
   color: white;
   font-weight: bold;
-}
-
-.main_menu > li {
-  text-decoration: none;
-  float: left;
-  padding: 30px 30px 0 30px;
-}
+  display: block;
+  width: 150px;
+  height: 100px;
+  visibility: visible;
+  display: block;
+  background: #444;
+  text-align: center;
+} */
+/* .main_menu li a  */
 
 .top_menu {
   font-size: 15px;
@@ -56,7 +147,7 @@
 }
 
 .top_menu li {
-  float: left;
+  display: inline-block;
   padding: 10px;
   /* background: url() */
 }

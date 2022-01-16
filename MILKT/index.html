@@ -6,13 +6,18 @@
   <link rel="stylesheet" type="text/css" href="css/main.css">
   <link rel="stylesheet" type="text/css" href="css/header.css">
   <link rel="stylesheet" type="text/css" href="css/footer.css">
-  <link rel="icon" type="image/png" size="32x32" href="images/favicon_32.png">
-  <link rel="stylesheet" href="text/css" href="slick/slick.css">
-  <link rel="stylesheet" href="text/css" href="slick/slick-theme.css">
-  <script type="text/javascript" src="JS/main.js">
-
+  <link rel="icon" type="image/png" href="images/favicon_32.png">
+  <!-- <link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css"> -->
+  <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript" src="js/common.js"></script>
+  <!-- <script type="text/javascript" src="js/footer.js"></script> -->
+  <script type="text/javascript" src="js/jquery.bxslider.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.mainBn_wrap').bxSlider();
+    });
   </script>
-  <script type="text/javascript" src="inc/header.js"></script>
+
 
 </head>
 <body>
@@ -23,17 +28,17 @@
       <div class="main_back">
         <section class="first">
           <h2 class="blind">밀크티아이의 학습 비전</h2>
-          <ul>
-            <li class="main_image01"><img src="images/main_banner01.png" alt="">
+          <div class="mainBn_wrap">
+            <div><img src="images/main_banner01.png" alt="">
               공부도 놀이처럼<br>아이답게!
-            </li>
-            <li class="main_image02"><img src="images/main_banner02.png" alt="">
+            </div>
+            <div><img src="images/main_banner02.png" alt="">
               우리아이 처음공부<br>밀크T아이!
-            </li>
-            <li class="main_image03"><img src="images/main_banner03.png" alt="">
+            </div>
+            <div><img src="images/main_banner03.png" alt="">
               아이다운 스마트학습<br>밀크T아이!
-            </li>
-          </ul>
+            </div>
+          </div>
           <div class="main_deco01"></div>
           <div class="main_deco02"></div>
           <div class="main_deco03"></div>
@@ -42,10 +47,10 @@
       </div>
   <!-- </div> -->
       <section class="second">
-        <h2 class="growup_h2">
-          <p>밀크T아이는 자신 있습니다.<br>
-          <span class="growup_p">내 아이가 진짜 성장하는 그 변화</span></p>
-        </h2>
+        <div class="growup_wrap">
+          <p>밀크T아이는 자신 있습니다.</p>
+          <h2>내 아이가 진짜 성장하는 그 변화</h2>
+        </div>
           <div class="best01">
             <div class="best1">
               <p class="best1_1">초등 스마트 학습</p>
@@ -63,7 +68,8 @@
             </div>
             <div class="best4">
               <p class="best4_1">유료 신청 전환률</p>
-              <p class="best4_2">95<span class="best4_3">%</span></p>            </div>
+              <p class="best4_2">95<span class="best4_3">%</span></p>            
+            </div>
             <div class="best5">
               <p class="best5_1">초등 스마트 학습</p>
               <p class="best5_2">1위</p>
@@ -80,13 +86,16 @@
             
           <div class="purpose02"><img src="images/purpose02.png" alt=""><p class="purpose02_1">올바른 학습으로<br>배움의 즐거움을 느끼게 하고<br>더 나아가 <strong class="purpose_strong1">무한한 미래를 꿈꾸게</strong>하는 것</p></div>
             
-          <p class="purpose03">그것이 <strong class="purpose_strong2">밀크T아이의 교육 목표</strong>입니다.</p>
+          <p class="purpose03">그것이 <strong>밀크T아이의 교육 목표</strong>입니다.</p>
         </div>
       </section>
 
-      <section class="fourth"><img src="images/sbj_01.png" alt="">
+      <section class="fourth">
+        <div class="fourth_h2_wrap">
+          <h2 class="notice_h2"><a href="notice.html">공지사항</a></h2>
+          <h2 class="review_h2"><a href="review.html">고객후기</a></h2>
+        </div>
         <div class="notice">
-          <h2 class="fourth_h2"><a href="#">공지사항</a></h2>
           <div class="notice01">
             <p class="notice_date">2021<br>09.14</p>
             <p class="notice_content">[공지] 추석연휴 화상 라이브(1:1 맞춤, 특별활동) 서비스 미운영 안내</p>
@@ -104,34 +113,33 @@
             <p class="notice_content">[공지] 추석연휴 화상 라이브(1:1 맞춤, 특별활동) 서비스 미운영 안내</p>
           </div>
         </div>
-        <div class="event">
-          <h2 class="fourth_h2"><a href="#">이벤트</a></h2>
-          <!-- <div class="event01">
-            <p class="event_date">2021<br>09.14</p>
-            <p class="event_content">[event] 추석연휴 화상 라이브(1:1 맞춤, 특별활동) 서비스 미운영 안내</p>
+        <!-- <div class="review">
+          <div class="review01">
+            <p class="review_date">2021<br>09.14</p>
+            <p class="review_content">[review] 추석연휴 화상 라이브(1:1 맞춤, 특별활동) 서비스 미운영 안내</p>
           </div>
-          <div class="event02">
-            <p class="event_date">2021<br>09.14</p>
-            <p class="event_content">[event] 추석연휴 화상 라이브(1:1 맞춤, 특별활동) 서비스 미운영 안내</p>
+          <div class="review02">
+            <p class="review_date">2021<br>09.14</p>
+            <p class="review_content">[review] 추석연휴 화상 라이브(1:1 맞춤, 특별활동) 서비스 미운영 안내</p>
           </div>
-          <div class="event03">
-            <p class="event_date">2021<br>09.14</p>
-            <p class="event_content">[event] 추석연휴 화상 라이브(1:1 맞춤, 특별활동) 서비스 미운영 안내</p>
+          <div class="review03">
+            <p class="review_date">2021<br>09.14</p>
+            <p class="review_content">[review] 추석연휴 화상 라이브(1:1 맞춤, 특별활동) 서비스 미운영 안내</p>
           </div>
-          <div class="event04">
-            <p class="event_date">2021<br>09.14</p>
-            <p class="event_content">[event] 추석연휴 화상 라이브(1:1 맞춤, 특별활동) 서비스 미운영 안내</p>
-          </div> -->
-        </div>
+          <div class="review04">
+            <p class="review_date">2021<br>09.14</p>
+            <p class="review_content">[review] 추석연휴 화상 라이브(1:1 맞춤, 특별활동) 서비스 미운영 안내</p>
+          </div>
+        </div> -->
 
-        <div class="free_process">
+        <div class="exp_process">
           <h2>무료체험 프로세스 안내</h2>
           <img src="images/process01.png" alt="">
-          <ul class="free_process_info">
-            <li>체험신청</li>
-            <li>무료배송</li>
-            <li>기기인증</li>
-            <li>무료반납</li>  
+          <div class="exp_process_info">
+            <div>체험신청</div>
+            <div>무료배송</div>
+            <div>기기인증</div>
+            <div>무료반납</div>  
           </ul>
         </div>
       </section>
@@ -161,11 +169,6 @@
     </main>
 
     <div data-include-path="inc/footer.html"></div>
-  <script type="text/javascript" src="http://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>  
-  <script type="text/javascript" src="slick/slick.min.js"></script>
-  <script src="js/common.js"></script>
 
-  </script>
 </body>
 </html>
