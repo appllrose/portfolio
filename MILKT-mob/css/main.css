@@ -214,13 +214,13 @@ header {
   width: 400px;
   height: 55px;
   line-height: 10px;
-  background: #f990a3;
+  background: #ffe774;
   text-align: center;
   font-size: 20px;
   border-radius: 30px;
 }
 .best:hover {
-  background: #f91aaa;
+  background: #961deb;
   color: #fff;
   font-weight: bold;
   display: block;

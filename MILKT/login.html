@@ -7,7 +7,8 @@
   <link rel="stylesheet" type="text/css" href="css/header.css">
   <link rel="stylesheet" type="text/css" href="css/footer.css">
   <link rel="icon" type="image/png" size="32x32" href="images/favicon_32.png">
-
+  <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript" src="js/login.js"></script>
 </head>
 <body>
   <div class="main_back">
@@ -16,14 +17,16 @@
     <div>
       <h2><img src="images/MTI_logo.png" alt="밀크T아이 로고"></h2>
 
-      <form action="login_ok.html" method="post" name="login_form">
+      <form action="" method="" name="login_form">
 
         <div>
-          <input type="text" id="ID" value="" placeholder="ID" name="" class="ID">
+          <input type="text" id="uid" value="" placeholder="ID" name="" class="ID">
+          <br><span class="err_id"></span>
         </div>
 
         <div>
-          <input type="password" id="password" value="" placeholder="PW" name="password" class="PW">
+          <input type="password" id="pwd" value="" placeholder="PW" name="password" class="PW">
+          <br><span class="err_pwd"></span>
         </div>
 
         <div class="keep_login_wrap">
@@ -43,7 +46,7 @@
 
         <hr>
 
-        <input type="submit" name="" value="로그인" class="login">
+        <input type="button" name="" value="로그인" class="login" onclick="login_check()">
         </form>
 
         <div class="side_menu">

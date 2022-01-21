@@ -14,24 +14,42 @@
   width: 1400px;
   margin: 0 auto;
 }
-.mainBn_wrap > div {
-  /* margin: 0 auto; */
+.mainBn_wrap .bx-wrapper {
+  box-shadow: none;
+  background: none;
+  border: 0;
+}
+.mainBn_wrap .slide {
+  position: relative;
+}
+.mainBn_wrap .slide p {
   font-family: "Katuri";
   font-size: 130px;
-  position: absolute;
   line-height: 160px;
-  top: 350px;
   color: #0351bd;
   text-shadow: 7px 7px #fff;
-  z-index: 6;
-}
-
-.first img {
-  width: 650px;
-  top: -150px;
-  left: 800px;
   position: absolute;
-  z-index: -3;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+.mainBn_wrap .slide .img-wrap {
+  width: 650px;
+  margin-left: auto;
+}
+.mainBn_wrap .bx-wrapper .bx-pager {
+  z-index: 9;
+}
+.mainBn_wrap .bx-wrapper .bx-pager.bx-default-pager a {
+  background: #fff;
+  width: 50px;
+  opacity: 0.5;
+}
+.mainBn_wrap .bx-wrapper .bx-pager.bx-default-pager a.active,
+.mainBn_wrap .bx-wrapper .bx-pager.bx-default-pager a:hover,
+.mainBn_wrap .bx-wrapper .bx-pager.bx-default-pager a:focus {
+  background: #fff;
+  opacity: 1;
 }
 
 /* 메인배경 데코 */
@@ -85,7 +103,7 @@
 .best02 {
   margin: 0 auto;
   display: inline-block;
-  width: 44%;
+  width: 45%;
 }
 
 /* best1 */
@@ -323,7 +341,7 @@
   background: url(../images/sbj_01.png) no-repeat;
 }
 .fourth_h2_wrap > h2 {
-  width: 200px;
+  width: 220px;
   font-size: 45px;
   padding-top: 25px;
   display: inline-block;
@@ -331,7 +349,6 @@
 .notice_h2 a {
   padding-right: 30px;
   text-align: center;
-  border-right: 2px solid rgba(250, 250, 250, 0.3);
 }
 .fourth_h2_wrap a {
   color: #0038a9;

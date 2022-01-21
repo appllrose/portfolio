@@ -21,6 +21,11 @@ h2 img {
   display: inline-block;
   margin-bottom: 20px;
 }
+.err_id,
+.err_pwd {
+  font-size: 18px;
+  color: #f00;
+}
 
 form {
   text-align: center;
@@ -29,10 +34,10 @@ form {
 /* ID, PW 박스 */
 .ID,
 .PW {
-  width: 220px;
-  height: 30px;
+  width: 400px;
+  height: 50px;
   padding: 5px;
-  margin: 5px auto;
+  margin: 10px auto;
   text-align: center;
   border: 1px solid #aaa;
 }
@@ -43,7 +48,7 @@ form {
 }
 
 .keep_login_wrap > div {
-  padding: 2px 38px;
+  padding: 5px 95px;
   display: inline-block;
 }
 
@@ -52,7 +57,7 @@ form {
 }
 
 .keep_login_wrap span {
-  font-size: 12px;
+  font-size: 20px;
   color: #666;
 }
 /* .keep_login_wrap,
@@ -61,16 +66,16 @@ form {
 } */
 .checkbox {
   /* display: none; */
-  width: 15px;
-  height: 15px;
+  width: 25px;
+  height: 25px;
   /* background: url(images/checkbox.png) no-repeat; */
 }
 
 .switch_button {
   position: relative;
   display: inline-block;
-  width: 35px;
-  height: 20px;
+  width: 40px;
+  height: 22px;
   /* right: 6px; */
 }
 
@@ -96,9 +101,9 @@ form {
 .onoff_switch:before {
   position: absolute;
   content: "";
-  height: 13px;
-  width: 13px;
-  left: 4px;
+  height: 15px;
+  width: 15px;
+  left: 6px;
   bottom: 4px;
   background-color: #fff;
   -webkit-transition: 0.5s;
@@ -116,14 +121,14 @@ form {
 }
 /* 구분선 */
 hr {
-  width: 230px;
+  width: 400px;
   margin: 20px auto 10px auto;
 }
 
 /* 로그인 클릭 박스 */
 .login {
-  width: 230px;
-  height: 40px;
+  width: 400px;
+  height: 50px;
   padding: 5px;
   margin: 5px auto 3px;
   background-color: #f8ba00;
@@ -139,7 +144,7 @@ hr {
 }
 
 .side_menu a {
-  font-size: 14px;
+  font-size: 18px;
   text-align: center;
   margin: 0 auto;
   color: #777;
@@ -152,7 +157,7 @@ hr {
 
 .side_menu li {
   float: left;
-  padding: 8px;
+  padding: 15px;
 }
 
 .li_bar1 {
@@ -161,4 +166,3 @@ hr {
 .li_bar2 {
   background: url(../images/footer_bar2.jpg) no-repeat right;
 }
-
