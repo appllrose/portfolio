@@ -1,0 +1,13 @@
+/* import */
+@import url(reset.css);
+@import url(font.css);
+@import url(common.css);
+
+/* @import "reset.css";
+@import "font.css";
+@import "common.css"; */
+
+header {
+  width: 100%;
+  background: #ffe744;
+}
