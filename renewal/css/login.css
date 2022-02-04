@@ -45,10 +45,8 @@ form {
   color: #666;
 }
 .checkbox {
-  /* display: none; */
   width: 25px;
   height: 25px;
-  /* background: url(images/checkbox.png) no-repeat; */
 }
 .switch_button {
   position: relative;
@@ -141,9 +139,6 @@ hr {
   float: left;
   padding: 15px 30px;
 }
-.li_bar1 {
-  background: url(../images/footer_bar2.jpg) no-repeat right;
-}
-.li_bar2 {
-  background: url(../images/footer_bar2.jpg) no-repeat right;
+.li_bar {
+  background: url(../../MILKT/images/footer_bar2.jpg) no-repeat right;
 }
