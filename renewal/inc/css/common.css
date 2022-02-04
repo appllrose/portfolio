@@ -5,6 +5,7 @@ select,
 option,
 button {
   font-size: 16px;
+  font-family: "GmarketSansMedium";
 }
 
 input[type="checkbox"] {
@@ -20,3 +21,4 @@ input[type="checkbox"] {
   margin: -1px;
   overflow: hidden;
 }
+

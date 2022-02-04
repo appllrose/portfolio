@@ -7,7 +7,98 @@
 @import "font.css";
 @import "common.css"; */
 
+/*** header ***/
 header {
-  width: 100%;
   background: #ffe744;
+  margin: 0 auto;
+  position: relative;
+  z-index: 100;
+}
+.header_wrap {
+  width: 1400px;
+  margin: 0 auto;
+  padding: 40px 0 20px;
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+h1 {
+  width: 200px;
+}
+h1 img {
+  width: 100%;
+}
+
+/** 메인 메뉴 **/
+nav {
+  width: 760px;
+  /* border: 1px solid red; */
+}
+.main_menu_drop .dep1 {
+  display: flex;
+  align-items: center;
+  font-family: "GmarketSansMedium";
+  font-size: 30px;
+  cursor: pointer;
+  justify-content: space-between;
+  /* padding-top: 20px; */
+}
+.main_menu_drop .dep1 li {
+  padding: 0 20px;
+}
+.main_menu_drop .dep2 {
+  display: none;
+  position: absolute;
+  font-size: 25px;
+}
+
+/* hover */
+.main_menu_drop .dep1 li:hover,
+.main_menu_drop .dep1 a:hover {
+  color: #fff;
+}
+.main_menu_drop .dep1 li:hover ul {
+  display: block;
+  color: #fff;
+  width: 230px;
+  margin-left: -13px;
+  text-align: center;
+  padding-top: 20px;
+}
+.main_menu_drop .dep1 li:hover ul li {
+  padding: 10px 0;
+  background: #fb3;
+}
+/* .main_menu_drop .dep1 li:hover .dep2 li {
+  display: block;
+  color: #fff;
+} */
+/* .main_menu_drop:hover .dep2 li { */
+/* display: block; */
+/* width: 220px; */
+/* height: 50px; */
+/* background: #eee; */
+/* } */
+
+/** TOP 메뉴 **/
+.top_menu {
+  width: 275px;
+}
+.top_menu ul {
+  display: flex;
+  justify-content: flex-end;
+  /* border: 1px solid red; */
+}
+.top_menu li {
+  padding: 0 10px;
+  font-size: 20px;
+}
+/* hover */
+.top_menu li:hover a {
+  font-weight: bold;
+  color: #999;
+}
+.top_menu li:active a {
+  color: #999;
 }

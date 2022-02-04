@@ -1,0 +1,276 @@
+/* footer */
+#footer {
+  /* padding-top: 100px; */
+  width: 100%;
+  /* height: 480px; */
+  margin: 0 auto;
+  font-family: "Notosans CJK";
+  font-size: 18px;
+  background: #fff;
+  position: relative;
+}
+
+/* top 버튼 */
+.top_p {
+  width: 300px;
+  height: 100px;
+  background: url(../../../MILKT/images/top.png) no-repeat;
+  position: absolute;
+  top: -65px;
+  left: 42%;
+  margin: 0 auto;
+  font-weight: bold;
+  padding-top: 30px;
+  text-align: center;
+}
+.top_p a {
+  background: url(../../../MILKT/images/top1.png) no-repeat center;
+  padding-top: 45px;
+  font-family: "TmoneyRoundWindExtraBold";
+  color: #aaa;
+}
+
+/* 연계 사이트 */
+.milkT_site {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-items: center;
+  width: 800px;
+  height: 40px;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+.milkT_site div {
+  margin: 0 30px;
+}
+.milkT_1 {
+  text-indent: -9999px;
+  width: 180px;
+  height: 40px;
+  background: url(../../../MILKT/images/milkT_1.png) no-repeat;
+}
+.milkT_2 {
+  text-indent: -9999px;
+  width: 180px;
+  height: 40px;
+  background: url(../../../MILKT/images/milkT_2.png) no-repeat;
+}
+.milkT_3 {
+  text-indent: -9999px;
+  width: 180px;
+  height: 40px;
+  background: url(../../../MILKT/images/milkT_3.png) no-repeat;
+}
+
+/* 사이트 맵 */
+.site_map_cont {
+  width: 100%;
+  background: #c3c3c3;
+  padding-bottom: 20px;
+}
+.site_map_wrap {
+  width: 1400px;
+  display: flex;
+  margin: 0 auto;
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+  vertical-align: middle;
+  /* border: 1px solid red; */
+  /* padding: 10px 0; */
+}
+.site_map {
+  width: 700px;
+}
+.site_map li {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 20px 20px 0;
+}
+.site_map a {
+  color: #fff;
+}
+.site_map a:hover {
+  color: black;
+}
+
+/* family site */
+.family_site_wrap {
+  border-radius: 10px;
+  width: 200px;
+  height: 35px;
+  margin: 5px 0;
+  position: absolute;
+  top: 105px;
+  right: 230px;
+  margin-right: 80px;
+  background: #f5f5f5;
+}
+.family_site_wrap h3 {
+  cursor: pointer;
+  padding-right: 60px;
+  padding-top: 10px;
+  color: #333;
+  background: url(../../../MILKT/images/top2.png) no-repeat 160px 12px;
+}
+.family_site_wrap > .family_site {
+  width: 200px;
+  height: 435px;
+  background: #f5f5f5;
+  margin-top: 5px;
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  top: -435px;
+  /* display: none;  */
+  line-height: 30px;
+  /* top: -2px; */
+  height: 0;
+  /* overflow: hidden; */
+  padding: 6px 0 2px 10px;
+  font-weight: bold;
+  font-size: 16px;
+  /* box-sizing: border-box; */
+}
+.family_site div {
+  color: #969494;
+  padding: 0 10px;
+  text-align: left;
+}
+
+.family_site a:hover {
+  width: 200px;
+  height: 30px;
+  background: #555;
+  color: #eee;
+  cursor: pointer;
+}
+
+/* 회사 정보 */
+.footer_info {
+  width: 1400px;
+  margin: 50px auto;
+  font-size: 16px;
+  display: flex;
+  line-height: 25px;
+}
+.info {
+  width: 980px;
+  background: url(../../../MILKT/images/footer_bar3.jpg) no-repeat right center;
+}
+.footer_logo {
+  width: 370px;
+  height: 100px;
+  background: url(../../../MILKT/images/footer_logo.png) no-repeat;
+  background-size: 330px auto;
+  text-indent: -9999px;
+}
+.bar2 {
+  background: url(../../../MILKT/images/footer_bar2.jpg) no-repeat;
+  width: 1px;
+  height: 20px;
+  background: #888;
+}
+.footer_bottom_cont1 > p,
+address {
+  display: inline-block;
+  padding-right: 20px;
+  color: #9a9a9a;
+  margin-top: 15px;
+}
+.footer_bottom_cont2 > p {
+  display: inline-block;
+  padding-right: 20px;
+  color: #9a9a9a;
+}
+.info > p {
+  color: #9a9a9a;
+  margin-top: 5px;
+  font-size: 13px;
+}
+
+/* 고객센터 */
+.custom_wrap {
+  width: 480px;
+  margin-left: 50px;
+  color: #9a9a9a;
+}
+.custom_serv h3 {
+  font-size: 30px;
+  font-weight: bold;
+}
+.custom_serv h3 a {
+  width: 28px;
+  height: 28px;
+  background: url(../../../MILKT/images/more.png) no-repeat 10px;
+  text-indent: -9999px;
+}
+.contact_info {
+  color: #0093da;
+  font-size: 50px;
+  padding: 30px 0 10px;
+  font-weight: 900;
+}
+.custom_serv_wrap1 p {
+  display: inline-block;
+  margin: 10px 10px 0 0;
+  font-size: 16px;
+}
+
+.custom_serv_wrap1 p:first-child {
+  padding: 0 10px 0 0;
+  background: url(../../../MILKT/images/footer_bar3.jpg) no-repeat right 5px;
+  background-size: 2px 15px;
+}
+.custom_serv_wrap2 {
+  clear: both;
+}
+.custom_serv_wrap2 p {
+  display: inline-block;
+  margin: 3px 10px 0 0;
+  font-size: 15px;
+}
+.custom_serv_wrap2 p:first-child {
+  padding: 0 10px 0 0;
+  background: url(../../../MILKT/images/footer_bar3.jpg) no-repeat right 5px;
+  background-size: 2px 15px;
+}
+
+.sns_info p {
+  float: left;
+  margin: 20px 0 0 0;
+  padding: 5px;
+}
+
+.sns1 {
+  text-indent: -9999px;
+  width: 39px;
+  height: 39px;
+  background: url(../../../MILKT/images/sns1.png) no-repeat;
+}
+.sns2 {
+  text-indent: -9999px;
+  width: 39px;
+  height: 39px;
+  background: url(../../../MILKT/images/sns2.png) no-repeat;
+}
+.sns3 {
+  text-indent: -9999px;
+  width: 39px;
+  height: 39px;
+  background: url(../../../MILKT/images/sns3.png) no-repeat;
+}
+.sns4 {
+  text-indent: -9999px;
+  width: 39px;
+  height: 39px;
+  background: url(../../../MILKT/images/sns4.png) no-repeat;
+}
+.sns5 {
+  text-indent: -9999px;
+  width: 39px;
+  height: 39px;
+  background: url(../../../MILKT/images/sns5.png) no-repeat;
+}
