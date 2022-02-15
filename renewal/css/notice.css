@@ -1,0 +1,83 @@
+/* import */
+@import url(../inc/css/common.css);
+@import url(../inc/css/reset.css);
+@import url(../inc/css/font.css);
+
+/* content */
+main {
+  width: 100%;
+  background: #ffe744;
+  padding-bottom: 20px;
+  /* height: 1000px; */
+}
+.h2_wrap {
+  background: #fffacc;
+  text-align: center;
+  vertical-align: middle;
+  padding: 80px 0;
+}
+.h2_wrap span {
+  font-family: "Katuri";
+  font-size: 30px;
+  line-height: 60px;
+}
+.h2_wrap h2 {
+  font-size: 60px;
+  font-family: "Katuri";
+  color: #0775be;
+  font-weight: 900;
+}
+.h2_wrap p {
+  font-size: 25px;
+  padding-top: 20px;
+  color: #999;
+  font-family: "GmarketSansMedium";
+}
+
+/* table */
+.cont_wrap {
+  width: 1400px;
+  margin: 80px auto;
+}
+table {
+  width: 1000px;
+  margin: 0 auto;
+  /* border: 1px solid #999; */
+  border-top: 3px solid #ebd300;
+  border-bottom: 3px solid #ebd300;
+  line-height: 50px;
+  text-align: center;
+}
+thead th {
+  font-weight: 700px;
+}
+tr {
+  border: 1px solid #ebd300;
+  border-left: 0;
+  border-right: 0;
+}
+tbody > tr td:nth-child(2) {
+  text-align: left;
+  width: 500px;
+  padding-left: 50px;
+  text-overflow: ellipsis;
+}
+tbody > tr > td > a:hover {
+  font-weight: 900;
+}
+
+/* pager */
+.pager_wrap {
+  width: 100px;
+  display: flex;
+  margin: 0 auto;
+}
+.pager_wrap li {
+  padding: 30px 5px;
+}
+.pager_wrap li:hover {
+  font-weight: 700;
+}
+.pager_wrap li:active {
+  font-weight: 700;
+}
