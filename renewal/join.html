@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="../MILKT/images/favicon_32.png">
+  <title>회원가입</title>
+
+  <link rel="stylesheet" type="text/css" href="css/join.css">
+
+  <!-- inc -->
+  <link rel="stylesheet" type="text/css" href="inc/css/header.css">
+  <link rel="stylesheet" type="text/css" href="inc/css/footer.css">
+  <script type="text/javascript" src="../MILKT/js/common.js"></script>
+
+  <!-- script/jquery -->
+  <script type="text/javascript" src="../MILKT/js/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <div data-include-path="inc/header.html"></div>
+  <main>
+    <div class="h2_wrap">
+      <span>밀크T아이</span>
+      <h2>학부모/일반 가입</h2>
+      <p class="sub_title">가입 정보 입력 및 약관에 동의해주세요.</p>
+    </div>
+    <form name="join_form" action="" method="">
+      <fieldset>
+        <legend>&nbsp;&nbsp;&nbsp;개인정보 입력<span class="nece">(필수 입력)</span></legend>
+          <p>
+            <label for="uname" class="txt">이름</label>
+            <input type="text" name="uname" id="uname">
+            <br>
+            <span class="err_name"></span>
+          </p>
+
+          <p>
+            <label for="uid" class="txt">아이디</label>
+            <input type="text" name="uid" id="uid">
+            <button type="button" class="btn" onclick="id_search()">중복확인</button>
+            <br>
+            <span class="err_id"></span>
+          </p>
+
+          <p>
+            <label for="pwd" class="txt">비밀번호</label>
+            <!-- <input type="password" name="pwd" id="pwd"> -->
+            <input type="text" name="pwd" id="pwd">
+            <br>
+            <span class="err_pwd"></span>
+          </p>
+
+          <p>
+            <label for="repwd" class="txt">비밀번호 확인</label>
+            <!-- <input type="password" name="repwd" id="repwd"> -->
+            <input type="text" name="repwd" id="repwd">
+            <br>
+            <span class="err_repwd"></span>
+          </p>
+
+          <p>
+            <label for="mobile" class="txt">전화번호</label>
+            <input type="text" name="mobile" id="mobile" size="15">
+            <br>
+            <span class="err_mobile"></span>
+          </p>
+
+          <p>
+            <label for="email" class="txt">이메일</label>
+            <input type="text" name="email" id="email" size="10"> 
+            <!-- <input type="text" name="email_dns" id="email_dns" size="15"> 
+            <select name="email_sel" id="email_sel" onchange="change_email()">
+              <option value="">직접 입력</option>
+              <option value="naver.com">NAVER</option>
+              <option value="hanmail.net">DAUM</option>
+              <option value="gmail.com">GOOGLE</option>
+            </select> -->
+            <br>
+            <span class="err_email"></span>
+          </p>
+          
+          <p>
+            <label for="birth" class="txt">생년월일</label>
+            <input type="date" name="birth" id="birth">
+          </p>
+          
+          <p class="gender_wrap">
+            <label for="gender" class="txt gender">성별
+              <input type="radio" name="gender" class="gender1" id="gender1" value="M">
+              <span>남자</span>
+            </label>
+            <label for="gender" class="gender">
+              <input type="radio" name="gender" class="gender2" id="gender2" value="W">
+              <span>여자</span>
+            </label>
+            <br>
+            <span class="err_gender"></span>
+          </p>
+
+          <p>
+            <label for="parentType" class="txt">학부모 유형</label>
+            <select name="parentType" id="parentType" class="parentType">
+              <option value="">유형 선택</option>
+              <option value="005">학부모</option>
+              <option value="006">학교 선생님</option>
+              <option value="007">학원 선생님</option>
+              <option value="008">기타</option>
+            </select>
+            <br>
+            <span class="err_parentType"></span>
+          </p>
+
+          <p>
+            <label for="address" class="txt">우편번호</label>
+            <input type="text" name="postalCode" id="postalCode" class="postal_code" size="5" readonly>
+            <button type="button" class="btn" onclick="addr_search()">주소검색</button>
+            <br>
+            <label for="addr1" class="txt">기본주소</label>
+            <input type="text" name="addr1" id="addr1" readonly>
+            <br>
+            <label for="addr2" class="txt">상세주소</label>
+            <input type="text" name="addr2" id="addr2">
+          </p>
+
+          <div class="child_ox">
+            <p>&nbsp;&nbsp;&nbsp;밀크T 자녀 등록<span class="nece">(선택 입력)</span></p>
+            <label for="child_ox" class="txt">자녀 여부
+              <input type="radio" name="child_o" id="child" class="child_o" value="n">
+              <span>있음</span>
+              <div class="child_info_wrap">
+                <label for="child_info" class="child_info">
+                  이름<input type="text">
+                  생년월일<input type="date">
+                </label>
+              </div>
+            </label>
+            <label for="child_ox">
+              <input type="radio" name="child_x" id="child" class="child_x" value="y">
+              <span>없음</span>
+            </label>
+          </div>
+
+          <div class="all_agree">
+            <input type="checkbox" name="agree" id="agree" value="y">
+            <label for="agree">모두 동의합니다.</label> 
+            <p class="agree_p">- 전체 동의는 필수 및 선택 정보에 대한 동의도 포함되어 있으며, 개별 동의도 선택하실 수 있습니다.</p>
+            <p class="agree_p">- 선택 항목의 경우 동의 거부 시에도 서비스 이용이 가능합니다.</p>
+            <div class="agree">
+              <p>
+                <input type="checkbox" name="agree1" id="agree1" value="y">
+                <label for="agree">밀크T 이용 약관 동의<span class="nece">(필수)</span></label>
+                <span class="err_agree1"></span>
+              </p>
+              <p>
+                <input type="checkbox" name="agree1" id="agree2" value="y">
+                <label for="agree">개인정보 수집 및 활용 동의<span class="nece">(필수)</span></label>
+                <span class="err_agree2"></span>
+              </p>
+              <p>
+                <input type="checkbox" name="agree1" id="agree3" value="y">
+                <label for="agree">마케팅 활용 동의<span class="nece">(선택)</span></label> 
+              </p>
+              <p>
+                <input type="checkbox" name="agree1" id="agree4" value="y">
+                <label for="agree">제3자 제공 동의<span class="nece">(선택)</span></label> 
+              </p>
+              <p>
+                <input type="checkbox" name="agree1" id="agree5" value="y">
+                <label for="agree">천재교육 이용약관 동의<span class="nece">(선택)</span></label> 
+              </p>
+            </div>
+          </div>
+
+          <p class="btn_wrap">
+              <button type="button" class="btn">취소</button>
+              <button type="button" class="btn" onclick="form_check()">회원가입</button>
+          </p>
+      </fieldset>
+    </form>
+  </main>
+  <div data-include-path="inc/footer.html"></div>
+
+</body>
+</html>

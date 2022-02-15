@@ -1,0 +1,195 @@
+/* import */
+@import url(../inc/css/common.css);
+@import url(../inc/css/reset.css);
+@import url(../inc/css/font.css);
+
+main {
+  width: 100%;
+  height: 1850px;
+  background: #ffe744;
+  font-family: "GmarketSansMedium";
+}
+.h2_wrap {
+  background: #fffacc;
+  /* height: 220px; */
+  text-align: center;
+  vertical-align: middle;
+  padding: 80px 0;
+}
+.h2_wrap span {
+  font-family: "Katuri";
+  font-size: 30px;
+  line-height: 60px;
+}
+.h2_wrap h2 {
+  font-size: 60px;
+  font-family: "Katuri";
+  color: #0775be;
+  font-weight: 900;
+}
+.h2_wrap p {
+  font-size: 25px;
+  padding-top: 20px;
+  color: #999;
+}
+form {
+  width: 680px;
+  margin: 0 auto;
+}
+legend {
+  width: 500px;
+  height: 30px;
+  background: url(../../MILKT/images/list-style.png) no-repeat left 0 top 12px;
+  background-size: 10px 10px;
+  font-size: 40px;
+  color: #0093da;
+  font-weight: bold;
+}
+.nece {
+  color: red;
+  font-size: 17px;
+  margin-left: 10px;
+  font-weight: lighter;
+}
+
+fieldset {
+  width: 800px;
+  margin: 50px auto;
+  padding: 50px 0;
+}
+p > span {
+  color: red;
+  font-size: 14px;
+  /* margin-left: 160px; */
+  /* height: 10px;*/
+}
+input {
+  width: 350px;
+  height: 30px;
+  border: 2px #ddd solid;
+  border-radius: 10px;
+  padding: 3px 10px;
+  background: rgb(255, 255, 255);
+  margin: 10px 0;
+}
+.btn_wrap {
+  width: 300px;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+.btn {
+  box-sizing: border-box;
+  width: 100px;
+  height: 40px;
+  line-height: 30px;
+  background: #fff;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+}
+.txt {
+  display: inline-block;
+  width: 160px;
+}
+.gender_wrap > .txt {
+  display: inline-block;
+  width: 160px;
+}
+.gender_wrap > .txt > input {
+  margin-right: 160px;
+}
+.gender {
+  width: 120px;
+}
+.gender input[type="radio"] {
+  /* width: 160px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  background: #fff;
+  text-align: center; */
+  display: none;
+}
+
+.gender input[type="radio"] + span,
+select {
+  display: inline-block;
+  background: none;
+  width: 100px;
+  height: 35px;
+  box-sizing: content-box;
+  margin: 10px auto;
+  border: 2px solid #ddd;
+  background: #fff;
+  border-radius: 10px;
+  padding: 0px 10px;
+  text-align: center;
+  line-height: 30px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.gender input[type="radio"]:checked + span {
+  border: 1px solid #0093da;
+  background: #0093da;
+  color: #fff;
+}
+
+/* 밀크티 자녀 등록 */
+.child_ox {
+  margin: 30px 0 20px 0;
+}
+.child_ox p {
+  width: 500px;
+  height: 30px;
+  padding-bottom: 40px;
+  background: url(../../MILKT/images/list-style.png) no-repeat left 0 top 12px;
+  background-size: 10px 10px;
+  font-size: 40px;
+  color: #0093da;
+  font-weight: bold;
+}
+.child_ox input[type="radio"] {
+  display: none;
+}
+.child_ox input[type="radio"] + span {
+  display: inline-block;
+  background: none;
+  width: 100px;
+  height: 35px;
+  box-sizing: content-box;
+  margin: 10px auto;
+  border: 2px solid #ddd;
+  background: #fff;
+  border-radius: 10px;
+  padding: 0px 10px;
+  text-align: center;
+  line-height: 30px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.child_info_wrap {
+  display: none;
+}
+.child_ox_info {
+  display: flex;
+  width: 400px;
+}
+
+/* 약관 동의 */
+.all_agree {
+  font-size: 20px;
+}
+.all_agree > label {
+  font-size: 25px;
+  font-weight: 900;
+}
+.agree_p {
+  font-size: 17px;
+  padding: 10px 0 0 20px;
+  color: #666;
+}
+.all_agree input[type="checkbox"] {
+  border: 2px solid #ddd;
+  border-radius: 10px;
+}
+.agree {
+  padding-left: 20px;
+}
